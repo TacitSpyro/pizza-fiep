@@ -4,17 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Jacques francois;    
+    font-family:Jacques francois;
 }
 
 body{
-    background-color: black;
+    background: #000;
     color: #fff;
 }
 
 .header{
     position: absolute;
-    width:100%;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: #1c1c1c;
@@ -61,12 +61,12 @@ body{
 
 .menu a{
     margin: 15px 0;
-    text-decoration: none;
+    text-decoration:none;
     color: white;
     font-size: 18px;
 }
 
-.menu-active{
+.menu.active{
     right: 0;
 }
 
@@ -75,11 +75,10 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transform: 0.3;
     z-index: 900;
 }
 
