@@ -4,17 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Jacques francois;    
+    font-family:Jacques francois;
+    cursor:crosshair;
 }
 
 body{
-    background-color: black;
+    background: #000;
     color: #fff;
 }
 
 .header{
     position: absolute;
-    width:100%;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: #1c1c1c;
@@ -44,6 +45,7 @@ body{
     background: white;
     margin: 4px 0;
     transition: 0.3s;
+    border-radius: 1.2rem;
 }
 
 .menu{
@@ -61,12 +63,12 @@ body{
 
 .menu a{
     margin: 15px 0;
-    text-decoration: none;
+    text-decoration:none;
     color: white;
     font-size: 18px;
 }
 
-.menu-active{
+.menu.active{
     right: 0;
 }
 
@@ -75,15 +77,106 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transform: 0.3;
     z-index: 900;
 }
 
 .overlay-menu.active{
     opacity: 1;
     visibility: visible;
+}
+
+.hero{
+    height: 100vh;
+    background: url("./pizza-Fundo.png")center/cover no-repeat;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.hero-text h2{
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text{
+    max-width: 500px;
+    text-align: right;
+    border-bottom: 10%;
+}
+
+.hero-text button{
+    padding: 12px 28px;
+    background-color: #ff3c00;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover{
+    background-color: #873331;
+    transition: 0.3s;
+}
+
+.diferenciais{
+    background: #145a32;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.diferenciais h2{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #1E6F43;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 1.3;
 }
