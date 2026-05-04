@@ -228,3 +228,33 @@ body{
     left: 0;
     color: #000;
 }
+
+.conteudo{
+    background-color: #155e3a;
+    color: white;
+}
+
+.conteudo img{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+#p1{
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.conteudo h2{
+    display:flex;
+    justify-self: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.textocomimagem{
+    text-align: justify;
+    display: flex;
+    font-size: 25px;
+}
