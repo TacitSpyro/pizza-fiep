@@ -258,3 +258,35 @@ body{
     display: flex;
     font-size: 25px;
 }
+
+.container{
+    display: flex;
+    gap: 5px;
+}
+
+#formulario{
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#formulario input{
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+}
+
+#formulario textarea{
+    width: 800px;
+    height: 300px;
+}
+
+.mapa{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-right: 6rem;
+}
