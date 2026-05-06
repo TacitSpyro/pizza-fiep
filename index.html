@@ -113,18 +113,21 @@
     </section>
     <section class="contato">
         <h2>Entre em Contato</h2>
-        <div class="container">
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.7613622782405!2d-49.27255253712058!3d-25.42469812689076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777905515638!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="formulario">
-                <div class="container">
-                    <input type="text" placeholder="Insira seu nome">
-                    <input type="text" id="e-mail" placeholder="Insira seu e-mail">
+        <form onsubmit="mensagem(event)">
+            <div class="container">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.7613622782405!2d-49.27255253712058!3d-25.42469812689076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777905515638!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <textarea name="texto" id="texto" placeholder="Insira sua mensagem"></textarea>
+                <div id="formulario">
+                    <div class="container">
+                        <input type="text" placeholder="Insira seu nome" id="nomeform">
+                        <input type="text" id="e-mail" placeholder="Insira seu e-mail">
+                    </div>
+                    <textarea name="texto" id="texto" placeholder="Insira sua mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </div>
             </div>
-        </div>
+        </form>
     </section>
     <footer>
         <div>
@@ -136,7 +139,23 @@
         </div>
     </footer>
     <script>
+        function mensagem(event){
 
+            event.preventDefault()
+
+            const email = document.getElementById("e-mail").value
+            const nome = document.getElementById("nomeform").value
+            const texto = document.getElementById("texto").value
+
+            console.log(email)
+            console.log(nome)
+
+            const encodedText = encodeURIComponent(texto);
+
+            const whatsappURL = `https://wa.me/${999999999}?text=${nome},${email},${encodedText}`;
+
+            window.open(whatsappURL, "_blank");
+        }
     </script>
 </body>
 </html>
