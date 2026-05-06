@@ -145,14 +145,13 @@
 
             const email = document.getElementById("e-mail").value
             const nome = document.getElementById("nomeform").value
-            const texto = document.getElementById("texto").value
+            const form = document.getElementById("texto").value
 
-            console.log(email)
-            console.log(nome)
+            const texto = `Olá \n Meu nome é ${nome}, meu email é ${email}.\nMinha mensagem é: ${form}`;
 
             const encodedText = encodeURIComponent(texto);
 
-            const whatsappURL = `https://wa.me/${999999999}?text=${nome},${email},${encodedText}`;
+            const whatsappURL = `https://wa.me/${999999999}?text=${encodedText}`;
 
             window.open(whatsappURL, "_blank");
         }
