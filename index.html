@@ -7,156 +7,162 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
-        <h1 class="logo">Pizza Fiep</h1>
-
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <section id="inicio">
+        <div id="fundoI">
+            <div id="fundoVerde"></div>
+            <div id="fundoBranco"></div>
+            <div id="fundoVermelho"></div>
+            <h1 class="texto">Dalle Pizza</h1>
+            <h3 class="texto2">Pizzas Italianas Artesanais</h3>
+            <nav>
+                <a href="#cardapio">
+                    <button id="pedir">Experimentar agora</button>
+                </a>
+                <a href="#contato">
+                    <button id="reservar">Fazer Reserva</button>
+                </a>
+            </nav>
+            <img src="imagems/pizza-strogonoff-carne-fermentacao-lenta.png" alt="pizzaDeStrog" id="pizzaST">
         </div>
-
-        <nav class="menu" id="menu">
-            <a href="#">Home</a>
-            <a href="#">Cardápio</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-
-    <div class="overlay-menu" id="overlay"></div>
-    <section class="hero">
-        <div class="overlay">
-            <div class="hero-text">
-                <h2>A melhor Industria<br>de pizza do,<br>Brasil</h2>
-                <button>Peça Agora</button>
+    </section>
+    <section id="cardapio">
+        <h1 id="texto3">Nosso Cardápio</h1>
+        <div class="info">
+            <img src="imagems/pizza_calabresa_e_mussarela_4389_orig.jpg" alt="visual" id="visualizar">
+            <div id="texto">
+                <h1 id="nomeP">Pizza de Calabresa</h1>
+                <h2 id="descricao">Uma clássica irresistível que conquista desde a primeira fatia. Nossa Pizza Calabresa é feita sobre massa artesanal de fermentação lenta, generosamente coberta com molho de tomate San Marzano temperado com manjericão fresco. Fatias finas de linguiça calabresa defumada são distribuídas com fartura, acompanhadas de cebola roxa em rodelas e azeitonas pretas selecionadas. Finalizada com mussarela de primeira qualidade, gratinada no forno à lenha até atingir a cor dourada perfeita.</h2>
+                <h2 id="ingredientes">Ingredientes: massa artesanal, molho de tomate, mussarela, linguiça calabresa defumada, cebola roxa, azeitonas pretas, manjericão, azeite de oliva.</h2>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div id="opcao-Calabresa" class="card">
+                <img src="imagems\image_calabresa_001.png" alt="calacad">
+                <h2>Pizza Tradicional calabresa</h2>
+                <h3>molho de tomate, linguiça calabresa fatiada, cebola, mussarela, azeitonas pretas e orégano</h3>
+            </div>
+            <div id="opcao-Costela" class="card">
+                <img src="imagems/image_costela_002.png" alt="costecad">
+                <h2>Pizza de Costela</h2>
+                <h3>Costela bovina desfiada (assada ou defumada), queijo mussarela ou coalho, cebola (roxa ou crispy) e molho de tomate.</h3>
+            </div>
+            <div id="opcao-Mussarela" class="card">
+                <img src="imagems/image_mussarella_003.png" alt="mussacad">
+                <h2>Pizza de Mussarela</h2>
+                <h3>Molho de tomate, queijo mussarela, orégano e azeitonas.</h3>
+            </div>
+            <div id="opcao-Escarola" class="card">
+                <img src="imagems/image_escarola_004.png" alt="escacad">
+                <h2>Pizza de Escarola</h2>
+                <h3>Escarola refogada com alho e cebola, mussarela, molho de tomate, bacon, azeitonas, ricota</h3>
+            </div>
+            <div id="opcao-Carbonara" class="card">
+                <img src="imagems/image_carbonara_005.png" alt="carbocad">
+                <h2>Pizza de Carbonara</h2>
+                <h3>Molho carbonara, mussarela, bacon, cebola caramelizada, pimenta-do-reino, salsinha</h3>
+            </div>
+            <div id="opcao-4queijos" class="card">
+                <img src="imagems/image_4queijos_006.png" alt="4quecad">
+                <h2>Pizza de 4 Queijos</h2>
+                <h3>Mussarela, gorgonzola, parmesão, catupiry, azeite de oliva, orégano</h3>
+            </div>
+            <div id="opcao-Chilli" class="card">
+                <img src="imagems/image_chilli_007.png" alt="chillicad">
+                <h2>Pizza de Chilli</h2>
+                <h3>Molho de tomate, mussarela, carne moída temperada, pimenta chilli, jalapeño, cebola roxa, cream cheese, páprica defumada, cominho</h3>
+            </div>
+            <div id="opcao-Carne" class="card">
+                <img src="imagems/image_carne_008.png" alt="carnecad">
+                <h2>Pizza de Carne</h2>
+                <h3>Molho de tomate, mussarela, carne moída, cebola, pimentão, alho, chimichurri, salsinha, azeite de oliva</h3>
             </div>
         </div>
     </section>
-
-    <script src="script.js"></script>
-
-    <section class="diferenciais">
-        <h2>Nossos diferenciais</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="./tomate.png" alt="tomate">
-                <p>Ingredientes Frescos</p>
-            </div>
-            <div class="card">
-                <img src="./fogo.png" alt="Fogueira">
-                <P>Forno a lenha</P>
-            </div>
-            <div class="card">
-                <img src="./queijo.png" alt="queijo">
-                <p>Mussarela Artesanal</p>
-            </div>
-            <div class="card"><img src="./relampago.png" alt="raio"><p>Entrega rapida</p></div>
+    <section id="Localidades">
+        <div class="transicao">
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
+            <div class="triangulo"></div>
         </div>
-    </section>
-
-    <section class="cardapio">
-        <h2>Cardápio</h2>
-        <div class="lista"> 
-            <ul data-title="🍕 Tradicional">
-                <li>Calabresa</li>
-                <li>Frango com Catupiry</li>
-                <li>Portuguesa</li>
-                <li>Marguerita</li>
-                <li>4 Queijos</li>
-                <li>Bacon</li>
-                <li>Napolitana</li>
-                <li>Bolonhesa</li>
-            </ul>
-            <ul data-title="🔥 Especial">
-                <li>Camarão com Catupiry</li>
-                <li>Carne seca com Cream Cheese</li>
-                <li>Filé Mignon com Cheddar</li>
-                <li>Strogonoff de Frango ou Carne</li>
-                <li>Picanha</li>
-                <li>5 Queijos</li>
-                <li>6 Queijos</li>
-            </ul>
-            <ul data-title="🍫 Doce">
-                <li>Chocolate</li>
-                <li>Prestigio</li>
-                <li>Romeu e Julieta</li>
-                <li>Banana com Canela</li>
-                <li>Banana Nevada</li>
-            </ul>
-        </div>
-    </section>
-    <section class="Sobre">
-        <div class="conteudo">
-            <h2>Sobre Nós</h2>
-            <div class="texto">
-                <p id="p1">
-                    Na Pizza FIEP, acreditamos que boas histórias começam ao redor de uma mesa. Nosso espaço nasceu com a ideia de unir pessoas, sabores e momentos especiais em um ambiente acolhedor, inspirado nas tradicionais pizzarias italianas.
-                </p>
-                <div class="textocomimagem">
-                    <img src="7da25afe43fc1b328722eee0318ddd72232449b9.png" alt="pizza">
-                        <p id="p2">
-                            <br>Tudo começa com ingredientes selecionados,<br> massa preparada com cuidado e o aroma irresistível que sai do forno a lenha.
-                            <br> Cada pizza é feita com dedicação, respeitando a tradição, 
-                            <br> também trazendo um toque de criatividade que torna cada experiência única.
-                            <br>Mais do que servir pizzas, queremos criar memórias. Seja em um encontro entre amigos,
-                            <br>uma pausa depois de um dia de trabalho ou uma comemoração especial,
-                            <br> a Pizza FIEP é um lugar para compartilhar, conversar e aproveitar o melhor da boa comida.
-                        </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sobre">
-
-    </section>
-    <section class="contato">
-        <form onsubmit="mensagem(event)">
-            <h2>Entre em Contato</h2>
-            <div class="container">
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378.7613622782405!2d-49.27255253712058!3d-25.42469812689076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777905515638!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div id="formulario">
-                    <div class="container">
-                        <input type="text" placeholder="Insira seu nome" id="nomeform">
-                        <input type="text" id="e-mail" placeholder="Insira seu e-mail">
+        <h1 id="Tfiliais">Nossas Filiais</h1>
+        <div class="pesquisa">
+            <div class="fundoCinza">
+                <h2>Filial Bairro Guaíra</h2>
+                <div class="enderecos">
+                    <div class="imagems">
+                        <img src="imagems\ChatGPT Image 12 de mai. de 2026, 13_35_10.png" alt="filial1" class="filial">
+                        <img src="imagems\ChatGPT Image 12 de mai. de 2026, 13_38_09.png" alt="interior1" class="filial">
                     </div>
-                    <textarea name="texto" id="texto" placeholder="Insira sua mensagem"></textarea>
-                    <input type="submit" value="Enviar">
+                    <div class="endereco">
+                        <h3>Curitiba - PR<br><br>Rua Manoel Ferreira da Silva<br><br>
+                            CEP: 81010-035<br><br>Telefone: (41) 93845-6622
+                            <br><br>Horario de Funcionamento Seg à Sex: 19:00 - 23:30</h3>
+                        <a href="https://maps.app.goo.gl/neTigvdENDpn6X2P7" target="_blank" rel="noopener noreferrer">
+                        <button>Como Chegar</button>
+                        </a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.992401667907!2d-49.271913123797695!3d-25.471929177535237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4bdce2bd719%3A0x2a99a47523378223!2sRua%20Manoel%20Ferreira%20da%20Silva%20-%20Gua%C3%ADra%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1778617993277!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </form>
+            <div class="fundoCinza">
+                <h2>Filial Boqueirão</h2>
+                <div class="enderecos">
+                    <div class="imagems">
+                        <img src="imagems\ChatGPT Image 12 de mai. de 2026, 13_36_38.png" alt="filial2" class="filial">
+                        <img src="imagems\xp-7.jpg.pagespeed.ic.LwBkuXQnUm.webp" alt="interior2" class="filial">
+                    </div>
+                    <div class="endereco">
+                        <h3>Curitiba - PR<br><br>Rua Manoel Ferreira da Silva<br><br>
+                            CEP: 81010-035<br><br>Telefone: (41) 93845-6622<br><br>
+                            Horario de Funcionamento Seg à Sex: 18:00 - 23:30</h3>
+                    <a href="https://maps.app.goo.gl/HWLEyBuXkonh6S6C7" target="_blank" rel="noopener noreferrer">
+                        <button>Como Chegar</button>
+                    </a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4120093157535!2d-49.262048423797104!3d-25.49130227752276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb36b9e80a3d%3A0xf6349921e2ab4c94!2sPra%C3%A7a%20Amazires%20Bley%20Davet!5e0!3m2!1spt-BR!2sbr!4v1778618502299!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <div class="formulario">
+            <img src="imagems\bife-e-cebola-caramelizada-com-queijo-suico-e-rucula-780x520.jpg" alt="aaa">
+            <div class="preencher">
+                <label for="Reserva">Faça sua reserva agora</label>
+                <input type="text" placeholder="Nome de Reserva">
+                <input type="number" placeholder="Telefone Para contato">
+                <input type="text" placeholder="CPF/CNPJ">
+                <input type="number" placeholder="Quantidade de Pessoas">
+                <input type="email" placeholder="E-mail">
+                <input type="date" placeholder="Data da Reserva">
+                <select name="reserva" id="escolhaF">
+                    <option value="Filial Guaíra">Filial Guaíra</option>
+                    <option value="Filial Boqueirão">Filial Boqueirão</option>
+                </select>
+                <button type="submit">Confirmar Reserva</button>
+                <label>Enviaremos uma mensagem pelo seu E-mail para informar a disponibilidade da reserva</label>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer">
-            <div class="direitos">
-                <p>Todos os Direitos Reservados &copy;Pedro Mundel</p>
-            </div>
             <div class="info">
-                <p>(41) 99999-9999</p>
-                <p>R.Paula Gomes, 270, São Francisco</p>
+                <label>Telefone: (41) 92101-6874</label>
+                <label>CNPJ: 65.724.877/0001-70</label>
             </div>
+            <div class="ibagens">
+                <img src="imagems\facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" alt="facebook">
+                <img src="imagems\instagram-white-icon.webp" alt="instagram">
+                <img src="imagems\x-social-media-white-icon.webp" alt="x">
+            </div>
+            <h3>Todos os Direitos reservados &copy;Dalle pizza - 2026</h3>
         </div>
     </footer>
-    <script>
-        function mensagem(event){
-
-            event.preventDefault()
-
-            const email = document.getElementById("e-mail").value
-            const nome = document.getElementById("nomeform").value
-            const form = document.getElementById("texto").value
-
-            const texto = `Olá \n Meu nome é ${nome}, meu email é ${email}.\nMinha mensagem é: ${form}`;
-
-            const encodedText = encodeURIComponent(texto);
-
-            const whatsappURL = `https://wa.me/${999999999}?text=${encodedText}`;
-
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
